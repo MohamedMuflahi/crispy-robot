@@ -4,14 +4,13 @@ import Cat from './Cat'
 function App() {
   const [cats, setCats] = useState([])
 
-   const fetchPosts = async () =>{
+   const fetchCats = async () =>{
      const req = await fetch("http://localhost:3000/cats")
      const res = await req.json()
      setCats(res)
     }
     useEffect(()=>{
-    // here
-      fetchPosts() 
+      fetchCats() 
     },[])
 
   return (
