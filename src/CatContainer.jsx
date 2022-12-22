@@ -25,11 +25,27 @@ const CatContainer = ({ searchTerm, breed,setCats,cats }) => {
   useEffect(() => {
     fetchCats();
   }, [])
+
+  const handleDelete = (id) =>{
+
+    // part 1
+    fetch(`http://localhost:3000/cats/${id}`,{
+      method: 'DELETE',
+    })
+    .then((response)=> response.json())
+    .then(data=>{
+      setCats(cats.filter((cat)=>{
+        return cat.id !== id
+       }))
+
+    })
+
+  }
   return (
     <div className="container">
       {filteredCats.map((cat) => {
         return (
-          <Cat key={cat.id} cat={cat} />
+          <Cat key={cat.id} cat={cat} handleDelete={handleDelete}/>
         )
       })}
     </div>
