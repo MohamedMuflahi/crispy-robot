@@ -1,0 +1,26 @@
+import Cat from "./Cat"
+import { useEffect,useState } from 'react';
+
+const CatContainer = () =>{
+    const [cats,setCats] = useState([])
+  const fetchCats = async () =>{
+    const request  = await fetch("http://localhost:3000/cats")
+    const response = await request.json()
+    
+    setCats(response)
+    console.log(response)
+  }
+  useEffect(()=>{
+    fetchCats();
+  },[])
+    return(
+        <>
+        {cats.map((cat)=>{
+        return(
+          <Cat key={cat.id} cat={cat}/>
+        )
+      })}
+        </>
+    )
+}
+export default CatContainer
