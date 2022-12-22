@@ -1,6 +1,4 @@
-import { useState } from "react"
-const SearchBar = () => {
-    const [searchTerm, setSearchTerm] = useState("")
+const SearchBar = ({searchTerm,setSearchTerm}) => {
     return (
         <div>
             <form>
