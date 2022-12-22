@@ -1,9 +1,11 @@
-const Cat = ({ cat, handleDelete}) => {
+const Cat = ({ cat, handleDelete, handleFavorite}) => {
     const { name, image, score} = cat
     
     return (
         <div className="card">
-            <img alt="" src={image} />
+            <img alt="" src={image} onClick={()=>{
+                handleFavorite(cat)
+            }}/>
             <p>{name}</p>
             <p>{score}</p>
             <button style={{

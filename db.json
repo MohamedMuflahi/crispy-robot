@@ -1,6 +1,13 @@
 {
   "cats": [
     {
+      "id": 1,
+      "name": "Benga",
+      "breed": "siamese",
+      "image": "https://animals.sandiegozoo.org/sites/default/files/2020-08/black-footed.jpg",
+      "score": 100
+    },
+    {
       "id": 5,
       "name": "Simon",
       "breed": "siamese",
@@ -13,6 +20,13 @@
       "image": "https://animals.sandiegozoo.org/sites/default/files/2020-08/black-footed.jpg",
       "score": "100",
       "id": 7
+    },
+    {
+      "name": "testing again",
+      "breed": "persian",
+      "image": "https://animals.sandiegozoo.org/sites/default/files/2020-08/black-footed.jpg",
+      "score": "200",
+      "id": 8
     }
   ]
 }

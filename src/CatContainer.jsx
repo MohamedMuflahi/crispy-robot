@@ -1,7 +1,7 @@
 import Cat from "./Cat"
 import { useEffect} from 'react';
 
-const CatContainer = ({ searchTerm, breed,setCats,cats }) => {
+const CatContainer = ({ searchTerm, breed,setCats,cats, favoriteCats, setFavoriteCats}) => {
 
   const breedFilteredCats = cats.filter((cat) => {
     if (breed === "All") {
@@ -13,8 +13,6 @@ const CatContainer = ({ searchTerm, breed,setCats,cats }) => {
   const filteredCats = breedFilteredCats.filter((cat) => {
     return cat.name.toLowerCase().includes(searchTerm.toLowerCase())
   })
-  console.log(breedFilteredCats)
-  console.log("F", filteredCats)
   const fetchCats = async () => {
     const request = await fetch("http://localhost:3000/cats")
     const response = await request.json()
@@ -41,11 +39,15 @@ const CatContainer = ({ searchTerm, breed,setCats,cats }) => {
     })
 
   }
+
+  const handleFavorite = (cat) =>{
+    setFavoriteCats([...favoriteCats,cat])
+  }
   return (
     <div className="container">
       {filteredCats.map((cat) => {
         return (
-          <Cat key={cat.id} cat={cat} handleDelete={handleDelete}/>
+          <Cat key={cat.id} cat={cat} handleDelete={handleDelete} handleFavorite={handleFavorite}/>
         )
       })}
     </div>
