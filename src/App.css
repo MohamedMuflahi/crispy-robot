@@ -1,1 +1,37 @@
 
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px dashed black;
+    text-align: center;
+    height: 25vw;
+
+  }
+  .card img{
+    width: 15vw;
+    
+  }
+  .card p{
+    width: 50%;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: aliceblue;
+    border: 1px dotted black;
+  }
+  .App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 2vh;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+  }

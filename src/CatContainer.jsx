@@ -14,13 +14,13 @@ const CatContainer = () =>{
     fetchCats();
   },[])
     return(
-        <>
+        <div className="container">
         {cats.map((cat)=>{
         return(
           <Cat key={cat.id} cat={cat}/>
         )
       })}
-        </>
+        </div>
     )
 }
 export default CatContainer
