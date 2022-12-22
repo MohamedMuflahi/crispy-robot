@@ -1,46 +1,60 @@
 {
-    "cats": [
-      {
-        "id": 1,
-        "name" : "Benga" ,
-        "breed" : "siamese",
-        "image": "https://animals.sandiegozoo.org/sites/default/files/2020-08/black-footed.jpg",
-        "score": 100
-      },
-      {
-        "id": 2,
-        "name" : "Winston" ,
-        "breed" : "bangal",
-        "image": "https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782__340.jpg",
-        "score": 200
-      },
-      {
-        "id": 3,
-        "name" : "Travis" ,
-        "breed" : "bangal",
-        "image": "https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-mediumSquareAt3X-v2.jpg",
-        "score": 300
-      },
-      {
-        "id": 4,
-        "name" : "Morgan" ,
-        "breed": "persian",
-        "image": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
-        "score": 800
-      },
-      {
-        "id": 5,
-        "name" : "Simon" ,
-        "breed" : "siamese",
-        "image": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg",
-        "score": 900
-      },
-      {
-        "id": 6,
-        "name" : "Malcom",
-        "breed" : "persian",
-        "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg",
-        "score": 150
-      }
-    ]
-  }
+  "cats": [
+    {
+      "id": 1,
+      "name": "Benga",
+      "breed": "siamese",
+      "image": "https://animals.sandiegozoo.org/sites/default/files/2020-08/black-footed.jpg",
+      "score": 100
+    },
+    {
+      "id": 2,
+      "name": "Winston",
+      "breed": "bangal",
+      "image": "https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782__340.jpg",
+      "score": 200
+    },
+    {
+      "id": 3,
+      "name": "Travis",
+      "breed": "bangal",
+      "image": "https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-mediumSquareAt3X-v2.jpg",
+      "score": 300
+    },
+    {
+      "id": 4,
+      "name": "Morgan",
+      "breed": "persian",
+      "image": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+      "score": 800
+    },
+    {
+      "id": 5,
+      "name": "Simon",
+      "breed": "siamese",
+      "image": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg",
+      "score": 900
+    },
+    {
+      "id": 6,
+      "name": "Malcom",
+      "breed": "persian",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg",
+      "score": 150
+    },
+    {
+      "name": "Test",
+      "breed": "persian",
+      "image": "https://animals.sandiegozoo.org/sites/default/files/2020-08/black-footed.jpg",
+      "score": "100",
+      "id": 7
+    },
+    {
+      "name": "testing again",
+      "breed": "persian",
+      "image": "https://animals.sandiegozoo.org/sites/default/files/2020-08/black-footed.jpg",
+      "score": "200",
+      "id": 8
+    }
+  ]
+}

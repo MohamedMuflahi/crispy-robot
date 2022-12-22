@@ -1,8 +1,8 @@
 import Cat from "./Cat"
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 
-const CatContainer = ({ searchTerm, breed }) => {
-  const [cats, setCats] = useState([])
+const CatContainer = ({ searchTerm, breed,setCats,cats }) => {
+
   const breedFilteredCats = cats.filter((cat) => {
     if (breed === "All") {
       return true
